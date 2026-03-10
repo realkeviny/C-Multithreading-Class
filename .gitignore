@@ -1,4 +1,3 @@
-# --- 忽略所有非代码类文档 ---
 *.docx
 *.doc
 *.pdf
@@ -8,17 +7,33 @@
 *.jpg
 *.jpeg
 
-# --- 忽略编译/包管理器产物 ---
+# --- Build & IDE Outputs ---
 build/
 bin/
 out/
 .vscode/
 vcpkg_installed/
 
-# --- 忽略 C++ 编译中间件 ---
-*.exe
-*.obj
+# --- C++ Compiled Objects & Libraries ---
 *.o
+*.obj
+*.slo
+*.lo
+*.gch
+*.pch
+*.ilk
 *.pdb
 *.ifc
 *.pcm
+*.so
+*.dylib
+*.dll
+*.lai
+*.la
+*.a
+*.lib
+
+# --- Executables ---
+*.exe
+*.out
+*.app
