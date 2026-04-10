@@ -1,0 +1,1 @@
+target_sources(Singleton PRIVATE Singleton.cpp)

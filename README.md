@@ -7,10 +7,10 @@ This repository tracks my progress through a comprehensive course on Modern C++ 
 The goal is to master low-level system development and concurrent programming using modern standards. The project structure follows a bottom-up approach, starting from C++ basics to advanced synchronization primitives and thread management.
 
 ## 🛠 Tech Stack
-* **Language:** C++20 / C++23
+* **Language:** C++20(Sometimes older)
 * **Build System:** CMake
 * **Tools:** MSVC / GCC / Clang (C++20 Modules support required)
-* **Testing Framework:** Catch2
+* **Testing Framework:** Catch2(If Available in the project)
 
 ## 📅 Learning Roadmap
 
@@ -28,18 +28,17 @@ The goal is to master low-level system development and concurrent programming us
 - [x] The `std::thread` class
 - [x] Thread management (Join/Detach)
 - [x] Identifying and fixing Data Races
-- [ ] Data Race Consequences (In Progress)
+- [x] Data Race Consequences
 
 ### Part 4: Advanced Concurrency (Planned)
 - [ ] Mutexes and Locking
-- [ ] Atomic Operations
 - [ ] Condition Variables & Promises
+- [ ] Atomic Operations
 
 ## 📂 Repository Structure
 * `/app`: Main application source files.
 * `/inclusion`: Module interfaces (`.ixx`).
 * `/tests`: Unit tests using Catch2.
-* `/docs`: Personal findings and experiment notes (Local only/TBD).
 
 ## ⚙️ How to Build
 1. Clone the repository.
