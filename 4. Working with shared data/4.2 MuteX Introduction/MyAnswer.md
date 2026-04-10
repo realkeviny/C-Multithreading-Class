@@ -10,6 +10,10 @@
 
 ## How can mutexes be used with critical sections?
 
-1. The threads will be synchronnized, so that when a thread is executing codes in critical section, no other threads can interleave the execution, but just execute in turn.
+A thread locks the mutex when it enters the critical section.
 
-2. When the mutex is unlocked, any changes that were done in critical section by previous threads will be visible to other threads.
+When the thread is about to leave the critical section, it will unlock the mutex, allowing other threads to execute codes in critical section.
+
+If the mutex is locked by a thread, no other threads are allowed to enter the critical section, they have to wait until the mutex has been unlocked.
+
+These steps ensures that the threads are synchronized, a thread won't be interleaved while executing the codes in critical section, and data race has been avoided.
