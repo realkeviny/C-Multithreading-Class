@@ -7,6 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 # add_executable(Homework Assignment.cpp)
+set(LIBRARY_NAME "ForAssignment")
 
 add_subdirectory(app)
 add_subdirectory(inclusion)

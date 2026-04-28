@@ -3,25 +3,21 @@ import <thread>;
 import <vector>;
 import <iostream>;
 
-void task()
-{
-    Singleton &single = get_Singleton();
-    std::cout << &single << std::endl;
+void task() {
+  Singleton &single = get_Singleton();
+  std::cout << &single << std::endl;
 }
 
-int main(int argc, char const *argv[])
-{
-    std::vector<std::thread> threads;
+int main(int argc, char const *argv[]) {
+  std::vector<std::thread> threads;
 
-    for (size_t i = 0; i < 10; ++i)
-    {
-        threads.push_back(std::thread(task));
-    }
+  for (size_t i = 0; i < 10; ++i) {
+    threads.push_back(std::thread(task));
+  }
 
-    for (auto &thr : threads)
-    {
-        thr.join();
-    }
+  for (auto &thr : threads) {
+    thr.join();
+  }
 
-    return 0;
+  return 0;
 }

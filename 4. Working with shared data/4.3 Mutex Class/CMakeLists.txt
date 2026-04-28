@@ -6,5 +6,6 @@ set(CMAKE_CXX_STANDARD          20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-add_executable(Executable Command.cpp)
-# add_executable(Homework Assignment.cpp)
+# add_executable(Executable Command.cpp)
+# add_executable(Assignment02 Assignment02.cpp)
+add_executable(Assignment03 Assignment03.cpp)

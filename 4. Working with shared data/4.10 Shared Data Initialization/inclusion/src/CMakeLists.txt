@@ -1,1 +1,1 @@
-target_sources(Singleton PRIVATE Singleton.cpp)
+# target_sources(Singleton PRIVATE Singleton.cpp)
