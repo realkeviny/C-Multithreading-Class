@@ -37,8 +37,11 @@ The goal is to master low-level system development and concurrent programming us
 ### Part 4: Advanced Concurrency
 
 - [x] Mutexes and Locking
-- [ ] Condition Variables & Promises
+- [x] Condition Variables & Promises
 - [ ] Atomic Operations
+- [ ] Asynchronous Programming
+- [ ] Parallelism
+- [ ] Practical Data Structures
 
 ## 📂 Repository Structure
 
