@@ -38,7 +38,7 @@ The goal is to master low-level system development and concurrent programming us
 
 - [x] Mutexes and Locking
 - [x] Condition Variables & Promises
-- [ ] Atomic Operations
+- [x] Atomic Operations
 - [ ] Asynchronous Programming
 - [ ] Parallelism
 - [ ] Practical Data Structures
