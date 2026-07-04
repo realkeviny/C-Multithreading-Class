@@ -28,15 +28,11 @@ Also, I have the choice whether to run the task synchronously in the same thread
 
 As the higher level of abstraction than the std::thread,  the library can manage the thread automatically for me, and I don't need to use shared data to send results from 1 thread to another.
 
-
-
 Disadvantages:
 
 Lack of ability to "detach".
 
 The task is "implicitly joined" if I execute it with the "async" launch options. That means if I have reached the end of an enclosing scope of caller, and called the destructor of the returned future, the destructor call will block until the task complete.
-
-
 
 ## Which situations are best suited to each of these options?
 
